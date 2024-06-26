@@ -1,4 +1,4 @@
-schemaVersion: 2.1.0
+schemaVersion: 2.2.0
 metadata:
   displayName: POC - Workspace
   name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
@@ -22,7 +22,7 @@ components:
       #     containerPath: /home/user/.m2
   - name: glassfish
     container:
-      image: payara/server-full
+      image: omnifish/glassfish:latest
       memoryLimit: 2Gi
       mountSources: true
       command:
