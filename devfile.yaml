@@ -5,7 +5,7 @@ variables:
   PROFILE: DEV
 metadata:
   displayName: POC - Workspace
-  name: "ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}"
+  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
   version: 0.0.0
   description: POC para VDI do II
 attributes:
@@ -16,9 +16,9 @@ components:
       image: centos:7
       memoryLimit: 2Gi
       mountSources: true
-      endpoints:
-        - name: glassfish
-          targetPort: 8080
+      # endpoints:
+      #   - name: glassfish
+      #     targetPort: 8080
       # volumes:
       #   - name: m2
       #     containerPath: /home/user/.m2
