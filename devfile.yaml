@@ -44,12 +44,10 @@ components:
 # COMMANDS
 commands:
   - id: build
-    apply:
+    exec:
       component: java
-      # command: |
-      #   mvn clean install
+      commandLine: mvn clean install
   - id: run
-    apply:
+    exec:
       component: glassfish
-      # command: |
-      #   ./bin/asadmin start-domain --verbose
+      commandLine: ./bin/asadmin start-domain --verbose
