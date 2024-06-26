@@ -12,9 +12,9 @@ components:
       image: adoptopenjdk:7-jdk-hotspot-bionic
       memoryLimit: 2Gi
       mountSources: true
-      endpoints:
-        - name: glassfish
-          targetPort: 8080
+      # endpoints:
+      #   - name: glassfish
+      #     targetPort: 8080
       # volumes:
       #   - name: m2
       #     containerPath: /home/user/.m2
@@ -31,7 +31,7 @@ components:
           ./bin/asadmin start-domain --verbose
       endpoints:
         - name: http
-          targetPort: 8181
+          targetPort: 8080
           exposure: public
 commands:
   - id: build
