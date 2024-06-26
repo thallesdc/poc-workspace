@@ -1,6 +1,9 @@
 schemaVersion: 2.1.0
 metadata:
-  name: ii-workspace
+  displayName: POC - Workspace thalles.costa
+  name: ii@workspace-thalles.costa
+  version: 0.0.0
+  description: POC para VDI do II
 attributes:
   che-editor: "eclipse/che-theia/next"
 components:
@@ -12,9 +15,9 @@ components:
       endpoints:
         - name: glassfish
           targetPort: 8080
-      volumes:
-        - name: m2
-          containerPath: /home/user/.m2
+      # volumes:
+      #   - name: m2
+      #     containerPath: /home/user/.m2
   - name: glassfish
     container:
       image: payara/server-full
@@ -34,10 +37,10 @@ commands:
   - id: build
     apply:
       component: java
-      command: |
-        mvn clean install
+      # command: |
+      #   mvn clean install
   - id: run
     apply:
       component: glassfish
-      command: |
-        ./bin/asadmin start-domain --verbose
+      # command: |
+      #   ./bin/asadmin start-domain --verbose
