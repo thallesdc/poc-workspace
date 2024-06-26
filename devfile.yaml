@@ -1,0 +1,43 @@
+schemaVersion: 2.1.0
+metadata:
+  name: java7-glassfish
+attributes:
+  che-editor: "eclipse/che-theia/next"
+components:
+  - name: java
+    container:
+      image: adoptopenjdk:7-jdk-hotspot-bionic
+      memoryLimit: 2Gi
+      mountSources: true
+      endpoints:
+        - name: glassfish
+          targetPort: 8080
+      volumes:
+        - name: m2
+          containerPath: /home/user/.m2
+  - name: glassfish
+    container:
+      image: payara/server-full
+      memoryLimit: 2Gi
+      mountSources: true
+      command:
+        - bash
+        - -c
+        - |
+          cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
+          ./bin/asadmin start-domain --verbose
+      endpoints:
+        - name: http
+          targetPort: 8080
+          exposure: public
+commands:
+  - id: build
+    apply:
+      component: java
+      command: |
+        mvn clean install
+  - id: run
+    apply:
+      component: glassfish
+      command: |
+        ./bin/asadmin start-domain --verbose
