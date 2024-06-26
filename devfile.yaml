@@ -1,24 +1,18 @@
 schemaVersion: 2.2.0
-metadata:
-  displayName: POC - Workspace
-  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
-  version: 0.0.0
-  description: POC para VDI do II
 variables:
   PROJECT_NAME: eeaoc
   UTILIZADOR: abe001308
   PROFILE: DEV
-attributes:
-  space:
-    instanceType: large
-    editor:
-      type: Idea
-      version: '2022.1'
-      updateChannel: EAP
-      vmoptions:
-        - '-Xms2048m'
-        - '-Xmx4096m'
+metadata:
+  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
+  namespace: thalles-costa-dev
+  version: 0.0.0
 components:
+  - name: universal-developer-image
+    container:
+      image: quay.io/devfile/universal-developer-image:ubi8-d071837
+      sourceMapping: /projects
+
   - name: java
     container:
       image: centos:7
@@ -30,6 +24,7 @@ components:
       # volumes:
       #   - name: m2
       #     containerPath: /home/user/.m2
+
   - name: glassfish
     container:
       image: omnifish/glassfish:latest
