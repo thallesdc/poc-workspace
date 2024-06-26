@@ -42,12 +42,12 @@ components:
       #     exposure: public
 
 # COMMANDS
-commands:
-  - id: build
-    exec:
-      component: java
-      commandLine: mvn clean install
-  - id: run
-    exec:
-      component: glassfish
-      commandLine: ./bin/asadmin start-domain --verbose
+# commands:
+#   - id: build
+#     exec:
+#       component: java
+#       commandLine: mvn clean install
+#   - id: run
+#     exec:
+#       component: glassfish
+#       commandLine: ./bin/asadmin start-domain --verbose
