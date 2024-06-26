@@ -1,7 +1,11 @@
 schemaVersion: 2.1.0
+variables:
+  PROJECT_NAME: EEAOC
+  UTILIZADOR: ABE001308
+  PROFILE: DEV
 metadata:
-  displayName: POC - Workspace thalles.costa
-  name: ii@workspace-thalles.costa
+  displayName: POC - Workspace
+  name: ii-workspace-${PROJEC_NAME}-${UTILIZADOR}
   version: 0.0.0
   description: POC para VDI do II
 attributes:
