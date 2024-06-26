@@ -11,7 +11,7 @@ components:
   - name: universal-developer-image
     container:
       image: quay.io/devfile/universal-developer-image:ubi8-d071837
-      sourceMapping: /projects
+      sourceMapping: /{{PROJECT_NAME}}
 
   - name: java
     container:
