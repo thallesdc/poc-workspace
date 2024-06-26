@@ -1,4 +1,5 @@
 schemaVersion: 2.2.0
+# METADATA
 metadata:
   name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
   namespace: thalles-costa-dev
