@@ -1,13 +1,13 @@
 schemaVersion: 2.1.0
-variables:
-  PROJECT_NAME: EEAOC
-  UTILIZADOR: ABE001308
-  PROFILE: DEV
 metadata:
   displayName: POC - Workspace
   name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
   version: 0.0.0
   description: POC para VDI do II
+variables:
+  PROJECT_NAME: EEAOC
+  UTILIZADOR: ABE001308
+  PROFILE: DEV
 attributes:
   che-editor: "eclipse/che-theia/next"
 components:
