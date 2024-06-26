@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: java7-glassfish
+  name: ii-workspace
 attributes:
   che-editor: "eclipse/che-theia/next"
 components:
