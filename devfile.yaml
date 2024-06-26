@@ -1,16 +1,14 @@
 schemaVersion: 2.2.0
+metadata:
+  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
+  namespace: thalles-costa-dev
+  version: 0.0.0
 
 # VARIABLES
 variables:
   PROJECT_NAME: eeaoc
   UTILIZADOR: abe001308
   PROFILE: DEV
-
-# METADATA
-metadata:
-  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
-  namespace: thalles-costa-dev
-  version: 0.0.0
 
 # COMPONENTS
 components:
