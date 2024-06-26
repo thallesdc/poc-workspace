@@ -5,9 +5,19 @@ metadata:
   version: 0.0.0
   description: POC para VDI do II
 variables:
-  PROJECT_NAME: EEAOC
-  UTILIZADOR: ABE001308
+  PROJECT_NAME: eeaoc
+  UTILIZADOR: abe001308
   PROFILE: DEV
+attributes:
+  space:
+    instanceType: large
+    editor:
+      type: Idea
+      version: '2022.1'
+      updateChannel: EAP
+      vmoptions:
+        - '-Xms2048m'
+        - '-Xmx4096m'
 components:
   - name: java
     container:
