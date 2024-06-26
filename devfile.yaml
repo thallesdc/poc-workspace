@@ -8,8 +8,6 @@ variables:
   PROJECT_NAME: EEAOC
   UTILIZADOR: ABE001308
   PROFILE: DEV
-attributes:
-  che-editor: "eclipse/che-theia/next"
 components:
   - name: java
     container:
@@ -33,10 +31,10 @@ components:
         - |
           cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
           ./bin/asadmin start-domain --verbose
-      endpoints:
-        - name: http
-          targetPort: 8080
-          exposure: public
+      # endpoints:
+      #   - name: http
+      #     targetPort: 8080
+      #     exposure: public
 commands:
   - id: build
     apply:
