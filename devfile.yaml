@@ -1,53 +1,9 @@
 schemaVersion: 2.2.0
-variables:
-  PROJECT_NAME: eeaoc
-  UTILIZADOR: abe001308
-  PROFILE: DEV
 metadata:
-  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
+  name: empty-umv100
   namespace: thalles-costa-dev
-  version: 0.0.0
 components:
-  - name: universal-developer-image
-    container:
+  - container:
       image: quay.io/devfile/universal-developer-image:ubi8-d071837
-      sourceMapping: /{{PROJECT_NAME}}
-
-  - name: java
-    container:
-      image: centos:7
-      memoryLimit: 2Gi
-      mountSources: true
-      # endpoints:
-      #   - name: glassfish
-      #     targetPort: 8080
-      # volumes:
-      #   - name: m2
-      #     containerPath: /home/user/.m2
-
-  - name: glassfish
-    container:
-      image: omnifish/glassfish:latest
-      memoryLimit: 2Gi
-      mountSources: true
-      command:
-        - bash
-        - -c
-        - |
-          cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
-          ./bin/asadmin start-domain --verbose
-      # endpoints:
-      #   - name: http
-      #     targetPort: 8080
-      #     exposure: public
-commands:
-  - id: build
-    apply:
-      component: java
-      # command: |
-      #   mvn clean install
-  - id: run
-    apply:
-      component: glassfish
-      # command: |
-      #   ./bin/asadmin start-domain --verbose
+      sourceMapping: /projects
+    name: universal-developer-image
