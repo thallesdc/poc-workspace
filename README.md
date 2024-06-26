@@ -8,8 +8,11 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 
 ## Preparação
 
-* Informe seu ABE no ficheiro XXXX
-* Informe seu projeto no ficheiro XXXX
+Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
+
+* PROJECT_NAME: siglas do projeto
+* UTILIZADOR: seu utilizador de rede
+* PROFILE: Informe seu perfil (DEV / BA )
 
 ## Executando
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii)
