@@ -1,52 +1,100 @@
 schemaVersion: 2.2.0
 # METADATA
 metadata:
-  name: ii-workspace-{{PROJECT_NAME}}-{{UTILIZADOR}}
+  name: ii-workspace-project-utilizador
   # namespace: thalles-costa-dev
-  version: 0.0.0
-
-# VARIABLES
-variables:
-  PROJECT_NAME: eeaoc
-  UTILIZADOR: abe001308
-  PROFILE: DEV
+  version: 0.0.1
+  tags:
+    - Java
+    - Maven
+  projectType: Maven
+  language: Java
 
 # COMPONENTS
 components:
-  - name: java
+  - name: tools
     container:
-      image: centos:7
-      memoryLimit: 2Gi
-      mountSources: true
-      # endpoints:
-      #   - name: glassfish
-      #     targetPort: 8080
-      # volumes:
-      #   - name: m2
-      #     containerPath: /home/user/.m2
-
-  - name: glassfish
-    container:
-      image: che-jboss/glassfish:latest
-      # memoryLimit: 2Gi
-      mountSources: true
+      image: registry.access.redhat.com/ubi9/openjdk-17:1.17-1.1705573248
       command:
-        - bash
-        - -c
-        - |
-          cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
-          ./bin/asadmin start-domain --verbose
+        - tail
+        - '-f'
+        - /dev/null
+      memoryLimit: 512Mi
+      mountSources: true
       endpoints:
-        - name: web
+        - name: https-maven
           targetPort: 8181
-          exposure: public
-        
-        - name: debug
+          protocol: https
+        - exposure: none
+          name: debug
           targetPort: 9009
-          exposure: public
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
+      env:
+        - name: DEBUG_PORT
+          value: '9009'
+  - name: m2
+    volume: {}
+
+  # - name: java
+  #   container:
+  #     image: centos:7
+  #     memoryLimit: 2Gi
+  #     mountSources: true
+  #     # endpoints:
+  #     #   - name: glassfish
+  #     #     targetPort: 8080
+  #     # volumes:
+  #     #   - name: m2
+  #     #     containerPath: /home/user/.m2
+
+  # - name: glassfish
+  #   container:
+  #     image: che-jboss/glassfish:latest
+  #     # memoryLimit: 2Gi
+  #     mountSources: true
+  #     command:
+  #       - bash
+  #       - -c
+  #       - |
+  #         cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
+  #         ./bin/asadmin start-domain --verbose
+  #     endpoints:
+  #       - name: web
+  #         targetPort: 8181
+  #         exposure: public
+        
+  #       - name: debug
+  #         targetPort: 9009
+  #         exposure: public
 
 # COMMANDS
-# commands:
+commands:
+  - id: mvn-package
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository package
+      group:
+        kind: build
+        isDefault: true
+  - id: run
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: java -jar target/*.jar
+      group:
+        kind: run
+        isDefault: true
+  - id: debug
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=${DEBUG_PORT},suspend=n -jar target/*.jar
+      group:
+        kind: debug
+        isDefault: true
 #   - id: build
 #     exec:
 #       component: java

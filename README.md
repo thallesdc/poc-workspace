@@ -4,6 +4,10 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 * Glassfish
 * SVN
 
+## Pendencias
+
+* Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
+
 ## Preparação
 
 Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
