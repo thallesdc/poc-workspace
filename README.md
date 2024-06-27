@@ -2,7 +2,7 @@
     <a href="https://www.eviden.com" target="_blank"><img src="https://www.etp4hpc.eu/image/fotos/logotype_eviden_rgb_orange.png" /></a>
 </div>
 
-# POC Workspace@II
+# POC Workspace
 Esse projeto tem como objetivo montar uma POC (Prova de Conceito) para o ambiente de trabalho das equipas de desenvolvimento. Para isso ocorrer, montamos a Workspace com as ferramentas:
 * ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 * Glassfish
@@ -17,7 +17,7 @@ Toda informação aqui contida e solução é de de uso interno, não podendo se
 
 ## Pendencias / TO-DO
 
-* Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
+* Nome Workspace: Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
 * Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
 
 
@@ -58,7 +58,7 @@ A POC está preparada para funcionar com o:
 
 [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
 
-> [PRECISAMOS PENSAR, POIS O II UTILIZA TAMBÉM:] <br/>
+> [PRECISAMOS PENSAR, POIS O PARCEIRO UTILIZA TAMBÉM:] <br/>
 
 [![Eclipse](https://img.shields.io/badge/Eclipse-356FCD.svg?style=for-the-badge&logo=Eclipse&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
