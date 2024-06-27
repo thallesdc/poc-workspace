@@ -40,9 +40,9 @@ Com o Eclipse Che em OpenShift, o desenvolvedor acessa um workspace com um DevFi
 * PROFILE: Informe seu perfil (DEV / BA ) -->
 
 ## Criar Workspace
-Possibilitamos ao desenvolvedor criar sua Workspace utilizando a IDE da sua preferência mas que contenha as ferramentas mínimas para seu desenvolvimento.
+Possibilitamos ao desenvolvedor criar sua Workspace utilizando a IDE da sua preferência e que contenha as ferramentas mínimas para seu desenvolvimento, conforme mencionado a cima.
 
-Por enquanto, a POC está preparada para funcionar com o:
+A POC está preparada para funcionar com o:
 
 [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-356FCD.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
