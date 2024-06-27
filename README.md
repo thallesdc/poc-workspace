@@ -24,6 +24,11 @@ Toda informação aqui contida e solução é de de uso interno, não podendo se
 
 ## Como funciona hoje
 Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que fornece acesso a uma máquina virtual Windows 11. Dentro dessa máquina, o [Vagrant](https://www.vagrantup.com/) é usado para iniciar uma máquina virtual Linux com o ambiente de desenvolvimento completo, incluindo IDE (Eclipse ou IntelliJ), cliente SVN e servidor de aplicativos Glassfish 3. A base de dados Oracle é instalada fora da instância de desenvolvimento e é compartilhada por todos os projetos.
+
+<div style="text-align: center;">
+    <img src="https://ibb.co/m5tK7MD">
+</div>
+
 ### Desvantagens
 * Alta latência: Existem latências significativas entre o Citrix e a VM Windows, entre a VM Windows e a VM Linux, e entre a IDE e o servidor de aplicativos, resultando em uma experiência de desenvolvimento lenta.
 * Ineficiência de recursos: A utilização de máquinas virtuais compartilhadas consome mais recursos do que containers, impactando negativamente o desempenho, especialmente em tarefas mais complexas como deploy de aplicações.
