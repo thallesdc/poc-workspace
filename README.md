@@ -1,6 +1,7 @@
 # POC Workspace@II
 Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar um ambiente de trabalho a equipa de desenvolvimento, utilizando
 * Java
+* ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 * Glassfish
 * SVN
 
@@ -23,6 +24,10 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 > Padrão <br/>
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii)
 
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 <!-- > IntelliJ <br/>
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
