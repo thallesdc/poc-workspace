@@ -11,9 +11,9 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 
 ## Preparação
 
-[ INFORMAR AQUI AS PRÉ-CONFIGURAÇÕES NECESSARIAS PARA INICIAR O AMBIENTE]
+> [ INFORMAR AQUI AS PRÉ-CONFIGURAÇÕES NECESSARIAS PARA INICIAR O AMBIENTE]
 
-[ INFORMAR O UTILIZADOR / INFORMAR O NOME DO PROJETO / INFORMAR O PERFIL (DEV ou BA) ]
+> [ INFORMAR O UTILIZADOR / INFORMAR O NOME DO PROJETO / INFORMAR O PERFIL (DEV ou BA) ]
 
 <!-- Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
 
@@ -32,7 +32,8 @@ Por enquanto, a POC está preparada para funcionar com o:
 
 [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
 
-> PRECISAMOS PENSAR, POIS O II UTILIZA TAMBÉM: <br/>
+> [PRECISAMOS PENSAR, POIS O II UTILIZA TAMBÉM: <br/>]
+
 [![Eclipse](https://img.shields.io/badge/Eclipse-356FCD.svg?style=for-the-badge&logo=Eclipse&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
 [![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-356FCD.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
