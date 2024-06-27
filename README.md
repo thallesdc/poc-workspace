@@ -1,8 +1,16 @@
 # POC Workspace@II
-Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar um ambiente de trabalho a equipa de desenvolvimento, utilizando
+Esse projeto tem como objetivo montar uma POC (Prova de Conceito) para o ambiente de trabalho das equipas de desenvolvimento. O mínimo para isso ocorrer, montamos a Workspace com as ferramentas:
 * ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 * Glassfish
 * SVN
+
+## Hoje
+Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que fornece acesso a uma máquina virtual Windows 11. Dentro dessa máquina, o [Vagrant](https://www.vagrantup.com/) é usado para iniciar uma máquina virtual Linux com o ambiente de desenvolvimento completo, incluindo IDE (Eclipse ou IntelliJ), cliente SVN e servidor de aplicativos Glassfish 3. A base de dados Oracle é instalada fora da instância de desenvolvimento e é compartilhada por todos os projetos.
+    * ### Desvantagens
+        - Alta latência: Existem latências significativas entre o Citrix e a VM Windows, entre a VM Windows e a VM Linux, e entre a IDE e o servidor de aplicativos, resultando em uma experiência de desenvolvimento lenta.
+		- Ineficiência de recursos: A utilização de máquinas virtuais compartilhadas consome mais recursos do que containers, impactando negativamente o desempenho, especialmente em tarefas mais complexas como deploy de aplicações.
+		- Segurança limitada: O acesso às fontes de código em máquinas virtuais, mesmo que virtuais, representa um risco de segurança.
+
 
 ## Pendencias / TO-DO
 
