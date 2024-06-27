@@ -1,5 +1,5 @@
 <div style="text-align: center">
-    <img src="https://www.etp4hpc.eu/image/fotos/logotype_eviden_rgb_orange.png" />
+    <a href="https://www.eviden.com" target="_blank"><img src="https://www.etp4hpc.eu/image/fotos/logotype_eviden_rgb_orange.png" /></a>
 </div>
 
 # POC Workspace@II
