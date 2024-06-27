@@ -4,6 +4,12 @@ Esse projeto tem como objetivo montar uma POC (Prova de Conceito) para o ambient
 * Glassfish
 * SVN
 
+## Pendencias / TO-DO
+
+* Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
+* Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
+
+
 ## Como funciona hoje
 Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que fornece acesso a uma máquina virtual Windows 11. Dentro dessa máquina, o [Vagrant](https://www.vagrantup.com/) é usado para iniciar uma máquina virtual Linux com o ambiente de desenvolvimento completo, incluindo IDE (Eclipse ou IntelliJ), cliente SVN e servidor de aplicativos Glassfish 3. A base de dados Oracle é instalada fora da instância de desenvolvimento e é compartilhada por todos os projetos.
 ### Desvantagens
@@ -12,10 +18,14 @@ Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que forn
 * Segurança limitada: O acesso às fontes de código em máquinas virtuais, mesmo que virtuais, representa um risco de segurança.
 
 
-## Pendencias / TO-DO
+## Proposta
+Com o Eclipse Che em OpenShift, o desenvolvedor acessa um workspace com um DevFile pré-configurado que inicia automaticamente os containers do servidor de aplicativos e da IDE.
+### Vantagens
+* Redução da latência: A comunicação direta entre o navegador e os containers elimina a latência entre as diferentes camadas, proporcionando uma experiência de desenvolvimento mais fluida.
+* Otimização do uso de recursos: Os containers oferecem maior eficiência no uso de recursos, resultando em um desempenho mais rápido e mais eficiente.
+* Rápida integração: A utilização de container pre-configurador pelos Dev Files permitirão que rapidamente um recurso tenha acesso a um ambiente de desenvolvimento funcional.
+* Repetibilidade: O Facto de ser um ambiente criado a medida com base em um Dev File permitirá que caso seja necessária o mesmo ambiente possa ser replicado para reprodução de erros ou para ajuda de elementos mais seniores em situações diversas.
 
-* Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
-* Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
 
 ## Preparação
 
@@ -30,7 +40,6 @@ Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que forn
 * PROFILE: Informe seu perfil (DEV / BA ) -->
 
 ## Criar Workspace
-
 Possibilitamos ao desenvolvedor criar sua Workspace utilizando a IDE da sua preferência mas que contenha as ferramentas mínimas para seu desenvolvimento.
 
 Por enquanto, a POC está preparada para funcionar com o:
