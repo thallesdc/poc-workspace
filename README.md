@@ -40,10 +40,7 @@ Com o Eclipse Che em OpenShift, o desenvolvedor acessa um workspace com um DevFi
 
 ## Preparação
 
-> [ INFORMAR AQUI AS PRÉ-CONFIGURAÇÕES NECESSARIAS PARA INICIAR O AMBIENTE] para isso, pensar como o colaborador informará:<br/>
-* Nome do projeto (siglas)
-* Utilizador de rede
-* Perfil (Dev / BA)
+> [ INFORMAR AQUI AS PRÉ-CONFIGURAÇÕES NECESSARIAS PARA INICIAR O AMBIENTE] para isso, pensar como o colaborador informará:<br/>* Nome do projeto (siglas)* Utilizador de rede* Perfil (Dev / BA)
 
 <!-- Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
 
