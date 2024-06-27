@@ -1,6 +1,5 @@
 # POC Workspace@II
 Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar um ambiente de trabalho a equipa de desenvolvimento, utilizando
-* Java
 * ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 * Glassfish
 * SVN
@@ -8,10 +7,13 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 ## Pendencias / TO-DO
 
 * Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
-* Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout
-* Possibilitar escolher qual a IDE quer usar (Eclipse / IntelliJ)
+* Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
 
 ## Preparação
+
+[ INFORMAR AQUI AS PRÉ-CONFIGURAÇÕES NECESSARIAS PARA INICIAR O AMBIENTE]
+
+[ INFORMAR O UTILIZADOR / INFORMAR O NOME DO PROJETO / INFORMAR O PERFIL (DEV ou BA) ]
 
 <!-- Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
 
@@ -21,9 +23,9 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 
 ## Criar Workspace
 
-> Padrão <br/>
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii)
+Possibilitamos ao desenvolvedor criar sua Workspace utilizando a IDE da sua preferência mas que contenha as ferramentas mínimas para seu desenvolvimento.
 
+Por enquanto, a POC está preparada para funcionar com o:
 
 [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
