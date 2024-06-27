@@ -19,7 +19,7 @@ Esse tutorial tem como objetivo montar uma POC (Prova de Conceito) para montar u
 * UTILIZADOR: seu utilizador de rede
 * PROFILE: Informe seu perfil (DEV / BA ) -->
 
-## Executando
+## Criar Workspace
 
 > Padrão <br/>
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii)
