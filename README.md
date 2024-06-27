@@ -14,8 +14,8 @@ Dentro do ficheiro ``devfile.yaml`` altere apenas no atributo VARIABLES os dados
 
 ## Executando
 
->> IntelliJ__
+> IntelliJ <br/>
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
->> Visual Studio__
+> Visual Studio <br/>
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
