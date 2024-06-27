@@ -1,4 +1,4 @@
-[(https://www.etp4hpc.eu/image/fotos/logotype_eviden_rgb_orange.png)](https://eviden.com/)
+![(https://www.etp4hpc.eu/image/fotos/logotype_eviden_rgb_orange.png)](https://eviden.com/)
 
 # POC Workspace@II
 Esse projeto tem como objetivo montar uma POC (Prova de Conceito) para o ambiente de trabalho das equipas de desenvolvimento. O mínimo para isso ocorrer, montamos a Workspace com as ferramentas:
