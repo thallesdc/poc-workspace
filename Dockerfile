@@ -1,9 +1,9 @@
 FROM        java:7-jdk
 
 ENV         JAVA_HOME         /usr/lib/jvm/java-7-openjdk-amd64
-
 ENV         GLASSFISH_HOME    /usr/local/glassfish3
 ENV         PATH              $PATH:$JAVA_HOME/bin:$GLASSFISH_HOME/bin
+
 ENV         ADMIN_USER        admin
 ENV         ADMIN_PASSWORD    admin123
 ENV         PASSWORDFILE      $GLASSFISH_HOME/bin/passwordfile

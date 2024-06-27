@@ -27,8 +27,8 @@ components:
 
   - name: glassfish
     container:
-      image: omnifish/glassfish:latest
-      memoryLimit: 2Gi
+      image: che-jboss/glassfish:latest
+      # memoryLimit: 2Gi
       mountSources: true
       command:
         - bash
@@ -36,10 +36,14 @@ components:
         - |
           cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
           ./bin/asadmin start-domain --verbose
-      # endpoints:
-      #   - name: http
-      #     targetPort: 8080
-      #     exposure: public
+      endpoints:
+        - name: web
+          targetPort: 8181
+          exposure: public
+        
+        - name: debug
+          targetPort: 9009
+          exposure: public
 
 # COMMANDS
 # commands:
