@@ -26,7 +26,7 @@ Toda informação aqui contida e solução é de de uso interno, não podendo se
 Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que fornece acesso a uma máquina virtual Windows 11. Dentro dessa máquina, o [Vagrant](https://www.vagrantup.com/) é usado para iniciar uma máquina virtual Linux com o ambiente de desenvolvimento completo, incluindo IDE (Eclipse ou IntelliJ), cliente SVN e servidor de aplicativos Glassfish 3. A base de dados Oracle é instalada fora da instância de desenvolvimento e é compartilhada por todos os projetos.
 
 <div style="text-align: center;">
-    <img src="https://i.ibb.co/XxpPTv2/hoje-vdi.jpg">
+    <img src="https://i.ibb.co/DGqGY18/hoje-vdi.jpg" style="width: 300px;" />
 </div>
 
 ### Desvantagens
