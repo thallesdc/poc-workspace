@@ -8,6 +8,8 @@ Esse projeto tem como objetivo montar uma POC (Prova de Conceito) para o ambient
 * Glassfish
 * SVN
 
+Toda informação aqui contida e solução é de de uso interno, não podendo ser partilhada sem autorização prévia da equipa.
+
 ## Pendencias / TO-DO
 
 * Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
