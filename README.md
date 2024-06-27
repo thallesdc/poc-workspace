@@ -29,9 +29,8 @@ Por enquanto, a POC está preparada para funcionar com o:
 
 [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-356FCD.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
-[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
-<!-- > IntelliJ <br/>
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
 
-> Visual Studio <br/>
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest) -->
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
+
+> PRECISAMOS PENSAR, POIS O II UTILIZA TAMBÉM:
+[![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-356FCD.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
