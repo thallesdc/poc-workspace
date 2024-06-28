@@ -95,6 +95,14 @@ commands:
       group:
         kind: build
         isDefault: true
+  - id: compile
+    exec:
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: mvn clean install -U
+      group:
+        kind: build
+        isDefault: true
   - id: run
     exec:
       component: tools
