@@ -23,6 +23,9 @@ Toda informação aqui contida e solução é de de uso interno, não podendo se
 * Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
 * Workspace: plugin para o oracle
 
+* Dockfile com GLassfish
+* Deploy para o glassfish (https://www.youtube.com/watch?v=Pe0bFA4WawQ)
+
 
 ## Como funciona hoje
 Atualmente, o desenvolvimento é realizado em um ambiente Citrix remoto que fornece acesso a uma máquina virtual Windows 11. Dentro dessa máquina, o [Vagrant](https://www.vagrantup.com/) é usado para iniciar uma máquina virtual Linux com o ambiente de desenvolvimento completo, incluindo IDE (Eclipse ou IntelliJ), cliente SVN e servidor de aplicativos Glassfish 3. A base de dados Oracle é instalada fora da instância de desenvolvimento e é compartilhada por todos os projetos.
