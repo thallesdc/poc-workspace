@@ -2,7 +2,7 @@ schemaVersion: 2.2.0
 # METADATA
 metadata:
   name: workspace-project-utilizador
-  # namespace: thalles-costa-dev
+  namespace: thalles-costa-dev
   version: 0.0.1
   tags:
     - Java
