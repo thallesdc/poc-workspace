@@ -111,14 +111,14 @@ commands:
       group:
         kind: debug
         isDefault: true
-  # - id: buildimage
-  #   exec:
-  #     label: "Build Image"
-  #     component: tools
-  #     workingDir: ${PROJECT_SOURCE}
-  #     commandLine: "podman build -f src/main/docker/Dockerfile.jvm -t image-registry.openshift-image-registry.svc:5000/openshift/quarkus-api-example ."
-  #     group:
-  #       kind: build
+  - id: buildimage
+    exec:
+      label: "Build Image"
+      component: tools
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: "podman build -f docker/Dockerfile -t image-registry.openshift-image-registry.svc:5000/openshift/quarkus-api-example ."
+      group:
+        kind: build
   # - id: loginlocalregistry
   #   exec:
   #     label: "Login to local OpenShift registry"
