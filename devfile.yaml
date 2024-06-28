@@ -15,7 +15,7 @@ starterProjects:
 - name: poc-hello-world
   git:
     remotes:
-      origin: https://github.chttps://github.com/thallesdc/poc-workspace-project.git
+      origin: ttps://github.com/thallesdc/poc-workspace-project.git
 
 # COMPONENTS
 components:
