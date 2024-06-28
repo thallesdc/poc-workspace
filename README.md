@@ -15,6 +15,8 @@ Toda solução é feita utilizando toda potencialidade da ferramenta [Eclipse Ch
 
 Toda informação aqui contida e solução é de de uso interno, não podendo ser partilhada sem autorização prévia da equipa.
 
+[Projeto Java](https://github.com/thallesdc/poc-workspace-project)
+
 ## Pendencias / TO-DO
 
 * Nome Workspace: Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
