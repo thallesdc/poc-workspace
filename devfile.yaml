@@ -1,7 +1,7 @@
 schemaVersion: 2.2.0
 # METADATA
 metadata:
-  name: workspace-$PROJECT_NAME-$UTILIZADOR
+  name: workspace-${PROJECT_NAME}-${UTILIZADOR}
   namespace: thalles-costa-dev
   version: 0.0.1
   tags:
