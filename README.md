@@ -64,13 +64,13 @@ Possibilitamos ao desenvolvedor criar sua Workspace utilizando a IDE da sua pref
 
 A POC está preparada para funcionar com o:
 
-[![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-356FCD.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
+[![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-356FCD.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-workspace?che-editor=che-incubator/che-idea/latest)
 
 
-[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-code/latest)
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-356FCD.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-workspace?che-editor=che-incubator/che-code/latest)
 
 > [PRECISAMOS PENSAR, POIS O PARCEIRO UTILIZA TAMBÉM:] <br/>
 
-[![Eclipse](https://img.shields.io/badge/Eclipse-356FCD.svg?style=for-the-badge&logo=Eclipse&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
+[![Eclipse](https://img.shields.io/badge/Eclipse-356FCD.svg?style=for-the-badge&logo=Eclipse&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-workspace?che-editor=che-incubator/che-idea/latest)
 
-[![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-356FCD.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-vdi-ii?che-editor=che-incubator/che-idea/latest)
+[![NetBeans IDE](https://img.shields.io/badge/NetBeansIDE-356FCD.svg?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)](https://workspaces.openshift.com#https://github.com/thallesdc/poc-workspace?che-editor=che-incubator/che-idea/latest)
