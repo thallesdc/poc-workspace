@@ -65,24 +65,24 @@ components:
   #     #   - name: m2
   #     #     containerPath: /home/user/.m2
 
-  - name: glassfish
-    container:
-      image: che-jboss/glassfish:latest
-      memoryLimit: 2Gi
-      mountSources: true
-      command:
-        - bash
-        - -c
-        - |
-          cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
-          ./bin/asadmin start-domain --verbose
-      endpoints:
-        - name: web
-          targetPort: 8181
-          exposure: public
-        - name: debug
-          targetPort: 9009
-          exposure: public
+  # - name: glassfish
+  #   container:
+  #     image: che-jboss/glassfish:latest
+  #     memoryLimit: 2Gi
+  #     mountSources: true
+  #     command:
+  #       - bash
+  #       - -c
+  #       - |
+  #         cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
+  #         ./bin/asadmin start-domain --verbose
+  #     endpoints:
+  #       - name: web
+  #         targetPort: 8181
+  #         exposure: public
+  #       - name: debug
+  #         targetPort: 9009
+  #         exposure: public
 
 # COMMANDS
 commands:
