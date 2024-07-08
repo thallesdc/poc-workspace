@@ -86,10 +86,12 @@ components:
 
 # COMMANDS
 commands:
+
+  # TOOLS / Maven
   - id: compile
     exec:
       component: tools
-      workingDir: ${PROJECT_SOURCE}
+      # workingDir: ${PROJECT_SOURCE}
       commandLine: mvn -DskipTests -DskipLivingDoc -DskipIT -U clean install
       group:
         kind: build
@@ -102,6 +104,8 @@ commands:
       group:
         kind: debug
         isDefault: true
+
+  # GF
   - id: buildimage
     exec:
       label: "Build Image"
