@@ -87,30 +87,30 @@ components:
 
 # COMMANDS
 commands:
-  - id: package
-    exec:
-      component: tools
-      workingDir: ${PROJECT_SOURCE}
-      commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository package
-      group:
-        kind: build
-        isDefault: true
+  # - id: package
+  #   exec:
+  #     component: tools
+  #     workingDir: ${PROJECT_SOURCE}
+  #     commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository package
+  #     group:
+  #       kind: build
+  #       isDefault: true
   - id: compile
     exec:
       component: tools
-      workingDir: ${PROJECT_SOURCE}
+      workingDir: pwd
       commandLine: mvn clean install -U
       group:
         kind: build
         isDefault: true
-  - id: run
-    exec:
-      component: tools
-      workingDir: ${PROJECT_SOURCE}
-      commandLine: java -jar target/*.jar
-      group:
-        kind: run
-        isDefault: true
+  # - id: run
+  #   exec:
+  #     component: tools
+  #     workingDir: ${PROJECT_SOURCE}
+  #     commandLine: java -jar target/*.jar
+  #     group:
+  #       kind: run
+  #       isDefault: true
   - id: debug
     exec:
       component: tools

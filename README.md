@@ -22,6 +22,7 @@ Toda informação aqui contida e solução é de de uso interno, não podendo se
 * Nome Workspace: Como pegar o utilizador de rede e nome do projeto para ao fazer o build, dar o nome com referencia?
 * Antes de inicializar a Workspace: informar qual o projeto será utilizado para que seja feito o checkout no ambiente
 * Workspace: plugin para o oracle
+* Bloquear o devfile para não ser alterado pela equipa de desenvolvimento
 
 * Dockfile com GLassfish
 * Deploy para o glassfish (https://www.youtube.com/watch?v=Pe0bFA4WawQ)
