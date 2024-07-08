@@ -28,13 +28,13 @@ components:
         - /dev/null
       memoryLimit: 512Mi
       mountSources: true
-      endpoints:
-        - name: https-maven
-          targetPort: 8181
-          protocol: https
-        - exposure: none
-          name: debug
-          targetPort: 9009
+      # endpoints:
+      #   - name: https-maven
+      #     targetPort: 8181
+      #     protocol: https
+      #   - exposure: none
+      #     name: debug
+      #     targetPort: 9009
       volumeMounts:
         - name: m2
           path: /home/user/.m2
@@ -65,52 +65,35 @@ components:
   #     #   - name: m2
   #     #     containerPath: /home/user/.m2
 
-  # - name: glassfish
-  #   container:
-  #     image: che-jboss/glassfish:latest
-  #     # memoryLimit: 2Gi
-  #     mountSources: true
-  #     command:
-  #       - bash
-  #       - -c
-  #       - |
-  #         cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
-  #         ./bin/asadmin start-domain --verbose
-  #     endpoints:
-  #       - name: web
-  #         targetPort: 8181
-  #         exposure: public
-        
-  #       - name: debug
-  #         targetPort: 9009
-  #         exposure: public
+  - name: glassfish
+    container:
+      image: che-jboss/glassfish:latest
+      memoryLimit: 2Gi
+      mountSources: true
+      command:
+        - bash
+        - -c
+        - |
+          cp -r /projects /opt/payara5/glassfish/domains/domain1/autodeploy/
+          ./bin/asadmin start-domain --verbose
+      endpoints:
+        - name: web
+          targetPort: 8181
+          exposure: public
+        - name: debug
+          targetPort: 9009
+          exposure: public
 
 # COMMANDS
 commands:
-  # - id: package
-  #   exec:
-  #     component: tools
-  #     workingDir: ${PROJECT_SOURCE}
-  #     commandLine: mvn -Dmaven.repo.local=/home/user/.m2/repository package
-  #     group:
-  #       kind: build
-  #       isDefault: true
   - id: compile
     exec:
       component: tools
-      workingDir: pwd
-      commandLine: mvn clean install -U
+      workingDir: ${PROJECT_SOURCE}
+      commandLine: mvn -DskipTests -DskipLivingDoc -DskipIT -U clean install
       group:
         kind: build
         isDefault: true
-  # - id: run
-  #   exec:
-  #     component: tools
-  #     workingDir: ${PROJECT_SOURCE}
-  #     commandLine: java -jar target/*.jar
-  #     group:
-  #       kind: run
-  #       isDefault: true
   - id: debug
     exec:
       component: tools
